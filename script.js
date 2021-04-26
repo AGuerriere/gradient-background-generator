@@ -5,9 +5,11 @@ let body = document.getElementById("gradient")
 
 function setGradient() {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+    let output = body.style.background + ";";
+    css.textContent = (output);
 }
 
-color1.addEventListener("input", setGradient)
+color1.addEventListener("input", setGradient);
 
-color2.addEventListener("input", setGradient)
+color2.addEventListener("input", setGradient);
 
